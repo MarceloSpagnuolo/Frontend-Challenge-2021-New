@@ -1,0 +1,49 @@
+.cnt {
+  padding-top: 10px;
+}
+.Buscador-Container {
+  background-color: #f0f0f0;
+  width: 40%;
+  margin: 5% 0 0 3.5%;
+  padding: 2%;
+  overflow-y: auto;
+  box-shadow: 10px 10px 10px black;
+  max-height: 70vh;
+  border-radius: 10px;
+}
+
+.Buscador-Content {
+  margin-top: 20px;
+}
+
+.Buscador-Content button {
+  margin-left: 5px;
+}
+
+.Content-No {
+  display: none;
+}
+
+.Buscador-Match {
+  margin-top: 30px;
+}
+
+.Match-No {
+  display: none;
+}
+
+.Buscador-Body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Buscador-Container p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.Buscador-Container span {
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
