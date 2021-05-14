@@ -37,6 +37,14 @@ function Buscador() {
     return elem.replace(/ /g, "%20");
   }
 
+  function handleKey(e) {
+    console.log(e);
+    if (e.charCode == 13 && title.length > 0) {
+      dispatch(searchBooks(title, category));
+      setActive(true);
+    }
+  }
+
   return (
     <div className="Buscador-Body">
       <div className="Buscador-Container">
@@ -64,6 +72,7 @@ function Buscador() {
             name="titleBook"
             placeholder="Enter book title or part of it"
             onChange={(e) => handleTitle(e)}
+            onKeyPress={(e) => handleKey(e)}
           />
           <button type="submit" name="search" onClick={(e) => handleSubmit(e)}>
             Search
